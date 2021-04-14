@@ -10,7 +10,8 @@ class Player {
         this.y = this.game.height - this.gunHeight
                 
         this.game.canvas.ontouchmove = e => {
-            this.x = e.clientX - this.rect.x - this.gunWidth / 2
+            const touch = e.touches[0]
+            this.x = touch.clientX - this.rect.x - this.gunWidth / 2
         }
     }
 

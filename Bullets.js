@@ -9,6 +9,7 @@ class Bullets {
         this.bullets = []
 
         this.game.canvas.onclick = e => {
+            
             const x = e.clientX - this.rect.x
             const y = this.game.height - this.game.player.gunHeight
             this.bullets.push({

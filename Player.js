@@ -9,7 +9,7 @@ class Player {
         this.x = this.game.width / 2 - this.gunWidth / 2
         this.y = this.game.height - this.gunHeight
                 
-        this.game.canvas.onmousemove = e => {
+        this.game.canvas.ontouchmove = e => {
             this.x = e.clientX - this.rect.x - this.gunWidth / 2
         }
     }
